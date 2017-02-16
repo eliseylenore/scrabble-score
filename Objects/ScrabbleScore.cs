@@ -17,11 +17,10 @@ namespace ScrabbleScoreApp.Objects
             return _userInput;
         }
 
-        public string[] SplitWord()
+        public char[] SplitWord()
         {
 
-            string[] sentenceSplitArray = new string[] {"this", "sentence"};
-            return sentenceSplitArray;
+            return _userInput.ToCharArray();
         }
     }
 }

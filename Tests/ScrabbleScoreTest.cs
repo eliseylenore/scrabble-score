@@ -25,10 +25,10 @@ namespace ScrabbleScoreApp
         public void SplitWord_BreakUserInputUpInto_Array()
         {
             //arrange
-            string[] splitWordArray = new string[] {"w", "o", "r", "d"};
+            char[] splitWordArray = new char[] { 'w', 'o', 'r', 'd' };
             ScrabbleScore newScrabbleScore = new ScrabbleScore("word");
             //act
-            string[] result = newScrabbleScore.SplitWord();
+            char[] result = newScrabbleScore.SplitWord();
             //assert
             Assert.Equal(splitWordArray, result);
         }
