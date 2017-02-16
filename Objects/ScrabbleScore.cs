@@ -14,7 +14,7 @@ namespace ScrabbleScoreApp.Objects
 
         public string GetUserInput()
         {
-            return "What up!";
+            return _userInput;
         }
     }
 }
