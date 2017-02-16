@@ -45,5 +45,18 @@ namespace ScrabbleScoreApp
             //assert
             Assert.Equal(LetterScore, result);
         }
+
+        //Test to see if user input is broken down letter vaules are added together
+        [Fact]
+        public void FindLetterScore_ReturnTotalScore_String()
+        {
+            //arrange
+            int totalAddedScore = 8;
+            ScrabbleScore newScrabbleScore = new ScrabbleScore("word");
+            //act
+            int result = newScrabbleScore.FindTotalScore();
+            //assert
+            Assert.Equal(totalAddedScore, result);
+        }
     }
 }
