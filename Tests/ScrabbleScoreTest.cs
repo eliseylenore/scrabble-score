@@ -57,6 +57,7 @@ namespace ScrabbleScoreApp
             int result = newScrabbleScore.FindTotalScore();
             //assert
             Assert.Equal(totalAddedScore, result);
+            Console.WriteLine(result);
         }
     }
 }
