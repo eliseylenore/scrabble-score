@@ -22,5 +22,10 @@ namespace ScrabbleScoreApp.Objects
 
             return _userInput.ToCharArray();
         }
+
+        public string FindLetterScore()
+        {
+            return "blah";
+        }
     }
 }
