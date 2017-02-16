@@ -38,7 +38,7 @@ namespace ScrabbleScoreApp
         public void FindLetterScore_ReturnLetterScore_String()
         {
             //arrange
-            string LetterScore = "w = 4, o = 1, r = 1, d = 2";
+            string LetterScore = "w = 4, o = 1, r = 1, d = 2, ";
             ScrabbleScore newScrabbleScore = new ScrabbleScore("word");
             //act
             string result = newScrabbleScore.FindLetterScore();
