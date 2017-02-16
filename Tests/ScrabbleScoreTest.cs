@@ -19,5 +19,18 @@ namespace ScrabbleScoreApp
             //assert
             Assert.Equal(word, result);
         }
+
+        //Test to see if user input is broken down into individualcharacters
+        [Fact]
+        public void SplitWord_BreakUserInputUpInto_Array()
+        {
+            //arrange
+            string[] splitWordArray = new string[] {"w", "o", "r", "d"};
+            ScrabbleScore newScrabbleScore = new ScrabbleScore("word");
+            //act
+            string[] result = newScrabbleScore.SplitWord();
+            //assert
+            Assert.Equal(splitWordArray, result);
+        }
     }
 }
